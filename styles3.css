@@ -1,0 +1,17 @@
+.container {
+    color: violet;
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: 800;
+    text-align: left;
+    text-decoration: underline;
+    line-height: 48px;
+    /*width:  50%;
+    height: 50%;*/
+
+    /*background-color: blueviolet;*/
+    background-image: url(https://unsplash.it/512/512);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

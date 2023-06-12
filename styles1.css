@@ -1,0 +1,28 @@
+h1.redtext{
+    color: red;
+}
+
+#myheader {
+    color: rebeccapurple;
+    font-size: 48px;
+}
+
+div + h1{
+    color: red;
+}
+
+.container .mytext{
+    color: blue;
+}
+
+/*
+.container #myheader -> all children of container class(div and non div)
+.container > #myheader -> direct child only and not inside dic\v
+div + h1 ->applies to h1(siblings of div)
+.mytext1 + .mytext2 -> applies color to mytext2(sibling of mytext1 class)
++ means -> only adjacent neighbour div
+.mytext0 ~ mytext2 -> applies color to all siblings
+*/
+input[type="text"],input[type="email"] {
+    border: 2px solid greenyellow;
+}

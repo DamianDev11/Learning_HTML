@@ -1,0 +1,25 @@
+.container {
+    background-color: antiquewhite;
+    padding: 12px 24px 36px 48px;
+    margin: 12px 24px 36px 48px;
+    border: 5px solid black;
+    /*font-size: 20px;*/
+}
+
+.main-text {
+    font-size: 24px;
+    background-color: aquamarine;
+    padding: 24px;
+    margin: 12px;
+    border-top: 20px solid rgb(228, 116, 116);
+    border-bottom: 15px solid rgb(75, 5, 5);
+    border-left: 15px solid rgb(13, 233, 90);
+    border-right: 15px solid rgb(9, 40, 245);
+    border-top-left-radius: 20px;
+    /*font-size: 2pc;
+    font-size: 50%;
+      width: 50vw;      content occupies half the total width
+      and resizes itself  */
+
+
+}
