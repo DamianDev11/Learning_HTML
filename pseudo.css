@@ -1,0 +1,28 @@
+h1::before{
+    /*content: url(//unsplash.it/32/32);*/
+    content: "> ";
+    color: blueviolet;
+    /*font-size: 65px ;*/
+}
+
+h1::after{
+    content: url(//unsplash.it/32/32);
+    display: block;
+    /*content: "Hello";*/
+    color: blueviolet;
+    font-size: 65px ;
+}
+
+.child p::before{
+    content: open-quote;
+}
+
+.child p::after{
+    content: close-quote;
+}
+
+/*.child p::before,.child p::after{
+    color: red;
+    font-size: 65px;
+    font-style:italics;
+}*/

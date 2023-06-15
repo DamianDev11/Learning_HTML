@@ -1,0 +1,26 @@
+.parent {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.child {
+    padding: 10px;
+    width: 600px;
+}
+
+.child1 {
+    background-color: blue;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.child2 {
+    background-color: darkgreen;
+}
+
+.child3 {
+    background-color: purple;
+}

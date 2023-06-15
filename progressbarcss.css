@@ -1,0 +1,37 @@
+body{
+    margin: 20px;
+}
+label{
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+progress{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(122, 18, 91);
+
+}
+
+/*Chrome,safari and edge*/
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(134, 39, 134);
+}
+
+progress[value]::-webkit-progress-value{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(45deg, #c91e76 25%, #e68231 25%, #e68231 50%, #c91e76 50%, #c91e76 75%, #e68231 75%, #e68231 100%);
+background-size: 56.57px 56.57px;;
+}
+
+/*Firefox  - > refer website stripes generator for attractive loading bars*/
+progress[value]::-moz-progress-bar{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(45deg, #c91e76 25%, #e68231 25%, #e68231 50%, #c91e76 50%, #c91e76 75%, #e68231 75%, #e68231 100%);
+background-size: 56.57px 56.57px;;
+}

@@ -1,11 +1,14 @@
+/* @import url('styles2fonts.css'); or */
+@import url('https://fonts.google.com/specimen/Oswald?query=osw');
 h1{
     color: blue;
 }
 
 .header {
     color: green;
-}
+} 
 
 #head {
+    font-family: 'Oswald';
     color: purple;
 }
