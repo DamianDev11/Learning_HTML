@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  background-color: #e2e2e2;
+  padding: 10px;
+  display: grid;
+  height: 100vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  grid-template-areas: 
+     "header header header header"
+     "sidebar content content content"
+     "footer footer footer footer";
+}
+
+.item {
+  background-color: tomato;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.item-1 {
+    grid-area: header;
+    object-fit: cover;
+}
+
+.item-2 {
+    grid-area: content;
+    background-image: url('gta5.jpg');
+    background-size: contain;
+    object-fit: cover;
+}
+
+.item-3 {
+    grid-area: sidebar;
+    background-image: url('pubg.jpg');
+    background-size: cover;
+    object-fit: cover;
+}
+
+.item-4 {
+    color: brown;
+    grid-area: footer;
+    background-image: url('cod.jpg');
+    background-size: cover;
+    object-fit: cover;
+}
