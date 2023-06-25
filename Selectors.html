@@ -1,0 +1,58 @@
+<html>
+<head>
+
+    <title>Selectors</title>
+    <style>
+        * {
+            color: red;
+        }
+        .para {
+            color: blue;
+        }
+        #author {
+            color: yellow;
+        }
+        [data] {
+            color: green;
+        }
+        [data="medicine"] {
+            color: pink;
+        }
+        /*attribute starts with med=^*/
+        [data^="med"]{
+            color: gray;
+        }
+        /*attribut ends with science=$*/
+        [data$="science"]{
+            color: cyan;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Selectors in CSS</h1>
+    <ol>
+        <li>Universal</li>
+        <li>Elements</li>
+        <li>ID</li>
+        <li>Class</li>
+        <li>Combinators</li>
+        <li>attribute</li>
+        <li>Group</li>
+    </ol>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minima ex atque enim harum sequi excepturi veritatis tenetur, provident earum incidunt voluptatibus in eaque libero. Beatae nostrum tempore quia similique!</p>
+    <p id="author">Dam</p>
+    <p  data="medicine">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo dolore fugiat sed eum! Aut fugit similique ex illo, ipsum mollitia voluptatibus libero veritatis. Aliquam inventore aut tempora modi earum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, optio perspiciatis sunt quas dolor ipsam alias nemo repellendus dolorem doloribus aut praesentium, magni tenetur tempore facere minus earum, ipsa provident.
+    </p>
+    <p data="medicine child">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, dolores? Ad obcaecati impedit enim, corrupti non ullam quidem necessitatibus, similique dolorum sequi rerum voluptatibus nulla in, pariatur libero dolorem odit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis alias officia labore deserunt doloribus voluptatem, totam temporibus suscipit sunt a eligendi laudantium eveniet, aspernatur at quia perferendis dolores inventore ab.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam inventore, libero ducimus accusamus sint rem. Illo repellat sint dignissimos? Ullam ad nam necessitatibus cum cupiditate asperiores repellendus officiis perferendis nihil?
+    </p>
+
+    
+</body>
+</html>

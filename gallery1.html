@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery App</title>
+
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(106, 92, 92);
+      }
+
+      h1 {
+        color: white;
+      }
+      .grid-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 25rem);
+      }
+
+      .grid-container > div {
+        position: relative;
+      }
+
+      .grid-container > div > img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease-in-out;
+      }
+      .grid-container > div :hover {
+        filter: brightness(50%);
+      }
+      .grid-container > div > img:hover {
+        /* width: 90%;
+        height: 90%; */
+        transform: scale(0.95);
+      }
+      .image-title {
+        position: absolute;
+        bottom: 1rem;
+        z-index: 2;
+        color: white;
+        left: 42%;
+        font-size: 1.5rem;
+        display: block;
+      }
+      .image-title:hover {
+        transform: scale(0.9);
+        transition: 0.4s ease-in-out;
+      }
+      footer {
+        color: white;
+        margin-top: 1rem;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Photo Gallery App</h1>
+    <div class="grid-container">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686256282146-46dd71827a36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          title="mountains"
+          alt="mountains"
+        />
+        <div class="image-title">Mount</div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1603270667998-6c998dc0eb66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="trees"
+        />
+        <div class="image-title">Volcano</div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1682921749597-b62356ff9be2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="stars"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1680100612420-e57b14dd2c7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="clouds"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686903430773-1bbd4f74f48b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="pond"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686513013885-b276d29002bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="bird"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686176904188-1c4457dd493d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="mount1"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1687201363580-1cd1bb33c2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="sunset"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686942300971-c8f5d0a3b692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="sea"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686997556281-99a0eabd80fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="swan"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1686997556281-99a0eabd80fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="waterfall"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1680214181571-b3436ee7638c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="desert"
+        />
+      </div>
+    </div>
+    <footer><div>Made by Damn!</div></footer>
+  </body>
+</html>
