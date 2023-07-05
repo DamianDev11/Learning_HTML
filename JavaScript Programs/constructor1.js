@@ -27,5 +27,4 @@ const Product = function (name, desc, cost, stock) {
 const vPhone = new Product("vPhone", "fastest phone", 500, 40);
 
 const tabbook = new Product("vtablet", "thinnest lappy", 600, 25);
-
-console.log(vphone.buy(5));
+vPhone.buy(5);
