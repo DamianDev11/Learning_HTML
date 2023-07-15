@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Book Library</h1>
+    <!-- Add a book section begins here-->
+    <section>
+      <h2>Add a book</h2>
+      <input type="text" id="bookTitle" placeholder="Title" />
+      <input type="text" id="bookAuthor" placeholder="Author" />
+      <input
+        type="number"
+        id="bookRating"
+        placeholder="Rating"
+        min="1"
+        max="5"
+      />
+      <button type="submit" id="addBookButton">Submit</button>
+    </section>
+    <!-- Add a book ends here-->
+    <!--Book List section starts here-->
+    <section id="bookList">
+      <h2>Book List</h2>
+      <hr />
+      <input type="text" placeholder="Search a title" />
+    </section>
+    <script src="script15-7.js"></script>
+  </body>
+</html>
