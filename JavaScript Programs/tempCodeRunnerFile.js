@@ -1,1 +1,1 @@
-let today = 100;
+const withPromises = () => Promise.resolve("This was executed using Promise");
