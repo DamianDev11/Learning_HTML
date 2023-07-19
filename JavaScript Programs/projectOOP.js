@@ -12,14 +12,14 @@ class Courier {
   }
 
   showCourier() {
-    return `The courier  is headed to ${this.destination}. It was booled by ${this.bookBuy} at ${this.source} and weighs a total of ${this.weight}`;
+    return `The courier  is headed to ${this.destination}. It was booked by ${this.bookBuy} at ${this.source} and weighs a total of ${this.weight}`;
   }
 }
 
 do {
-  let myCourier = new Courier();
-  console.log("Choose onc : 1. Book Courier 2. See Details 3.Quit ");
-  choice = parseInt(prompt("Enter your choice"));
+  let myCourier = new Courier(21, "Bihar", "Bangalore", "dam");
+  console.log("Choose one option : 1. Book Courier 2. See Details 3.Quit ");
+  choice = parseInt(prompt("Enter your choice: "));
   switch (choice) {
     case 1:
       console.log(myCourier.bookCourier);
